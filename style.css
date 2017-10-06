@@ -1,0 +1,107 @@
+body {
+	background-color:rgba(163,181,206,.82);
+	margin: 0;
+}
+.header {
+	position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+.header img {
+	position: relative;
+    top: 15px;
+    left: 15px;
+}
+.header h2 {
+	display: inline-block;
+    position: relative;
+    left: 20px;
+    font-family: broadway;
+    font-weight: lighter;
+}
+#myProgress {
+	width:300px;
+	background-color:#ddd;
+	max-width: 100%;
+}
+#myBar {
+	width:1%;
+	height:30px;
+	background-color:#4caf50;
+	transition:width .5s
+}
+#userText {
+	width:600px;
+	height:300px;
+	display:block;
+	margin:auto;
+	resize: none;
+	max-width: calc(100% - 30px);
+	background-color: #f7f7f7;
+}
+#buttonsBox {
+	display:inline-block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width:600px;
+	padding: 15px;
+	box-sizing: border-box;
+	max-width: calc(100% - 30px);
+	text-align: center;
+}
+.results {
+	display:none;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width:600px;
+	padding: 15px;
+	box-sizing: border-box;
+	max-width: calc(100% - 30px);
+	text-align: center;
+	background-color: #f5f5f5;
+}
+#test {
+	text-align:center;
+	font-weight:lighter;
+	font-size: 20px;
+	font-family: arial;
+}
+#myProgress {
+	display:block;margin:auto
+}
+.button {
+	display:table-cell;
+	width:48%;
+	height:40px;
+	background-color:#2266aa;
+	color:white;
+	text-transform:uppercase;
+	border:none;
+}
+.button:hover {
+	cursor:pointer;
+	background-color:#114488;
+}
+@media screen and (max-width: 600px) {
+	#userText {
+		max-height: 50vh;
+	}
+	.button {
+		display: block;
+		width: 100%;
+		margin: 0 auto 16px auto;
+	}
+	.results {
+		margin-top: -15px;
+	}
+	#buttonsBox {
+		padding: 15px 0;
+	}
+}
